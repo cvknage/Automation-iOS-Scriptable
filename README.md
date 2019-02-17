@@ -13,7 +13,7 @@ In the top of the script you can customize the folowing parameters:
 
 ```JavaScript
 /* The name of the Reminders list to uncheck */
-const LIST_NAME = "Release"
+const LIST_NAME = "Change Oil Filter"
 ```
 
 
