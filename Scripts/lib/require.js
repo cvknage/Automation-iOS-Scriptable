@@ -1,4 +1,4 @@
-// File Origin: Right Here
+// File Origin: https://github.com/cvknage/Automation-iOS-Scriptable/blob/master/Scripts/lib/require.js
 
 /**
  * This script emulated the behaviout of the 'require' function for CommonJS modules.
