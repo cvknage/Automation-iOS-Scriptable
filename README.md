@@ -4,6 +4,8 @@ This repo contains a collection of my scripts that I use for automation on iOS w
 
 Scriptable allows me to extend the functionality of Siri Shortcuts with deeper integration to iOS and third party apps.
 
+**All Scripts can be found in the [Scripts](https://github.com/cvknage/Automation-iOS-Scriptable/tree/master/Scripts) folder.**
+
 
 ## Uncheck Reminders
 This script simply unchecks all reminders in an iOS Reminders list. 
