@@ -38,7 +38,7 @@ const CALENDAR_TITLE = 'work';
 const OUT_OF_OFFICE_EVENT_TITLE = 'Out of Office';
 
 /* Add a buffer before the event */
-const BUFFER_HOURS_BEFORE_EVENT = ;
+const BUFFER_HOURS_BEFORE_EVENT = 0;
 const BUFFER_MINUTES_BEFORE_EVENT = 30;
 
 /* Add a buffer after the event */
