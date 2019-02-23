@@ -109,14 +109,14 @@ function createOutOfOfficeEvent(calendar, eventTitle, iCalEvent) {
         logDebug('Formatting All Day Event');
         endDate.setDate(endDate.getDate() - ICAL_TO_CALENDAR_DATE_DELTA);
     } else {
-        const MINISECONDS_IN_AN_HOUR = 3600000;
-        const MINISECONDS_IN_A_MINUTE = 60000;
+        const MILISECONDS_IN_AN_HOUR = 3600000;
+        const MILISECONDS_IN_A_MINUTE = 60000;
 
-        let msBefore = ((BUFFER_HOURS_BEFORE_EVENT * MINISECONDS_IN_AN_HOUR) + (BUFFER_MINUTES_BEFORE_EVENT * MINISECONDS_IN_A_MINUTE));
+        let msBefore = ((BUFFER_HOURS_BEFORE_EVENT * MILISECONDS_IN_AN_HOUR) + (BUFFER_MINUTES_BEFORE_EVENT * MILISECONDS_IN_A_MINUTE));
         logDebug(`Subtracting ${msBefore} MS from startDate`);
         startDate.setTime(startDate.getTime() - msBefore);
         
-        let msAfter = ((BUFFER_HOURS_AFTER_EVENT * MINISECONDS_IN_AN_HOUR) + (BUFFER_MINUTES_AFTER_EVENT * MINISECONDS_IN_A_MINUTE));
+        let msAfter = ((BUFFER_HOURS_AFTER_EVENT * MILISECONDS_IN_AN_HOUR) + (BUFFER_MINUTES_AFTER_EVENT * MILISECONDS_IN_A_MINUTE));
         logDebug(`Adding ${msAfter} MS to endDate`);
         endDate.setTime(endDate.getTime() + msAfter);
     }
